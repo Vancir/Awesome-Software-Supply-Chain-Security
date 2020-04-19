@@ -2,41 +2,21 @@
 
 Awesome系列repo, 收集与`软件供应链安全`相关的一切资料, 主要以论文为主.
 
-<details>
-<summary> 软件供应链安全综述 </summary>
+## 论文
 
-> 传送门: [软件供应链安全综述](http://jcs.iie.ac.cn/xxaqxb/ch/reader/view_abstract.aspx?file_no=20200106&flag=1) 
+- [x] [软件供应链安全综述](http://jcs.iie.ac.cn/xxaqxb/ch/reader/view_abstract.aspx?file_no=20200106&flag=1): 综述性论文, 对于供应链安全目前的进展有一定的把握.
+- [x] [Constructing Supply Chains in Open Source Software](https://dl.acm.org/doi/pdf/10.1145/3183440.3183454): 提出通过建立依赖网络图, 代码复用网络图和知识流网络来分析开源软件的供应链安全.
+- [x] [Detecting Repackaged Smartphone Applications in Third-Party Android Marketplaces](https://www.csc2.ncsu.edu/faculty/xjiang4/pubs/CODASPY12.pdf): 提出了方法来检测APK重打包的问题.
+- [ ] [Towards Measuring and Mitigating Social Engineering Software Download Attacks](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_nelms.pdf)
+- [ ] [软件供应链污染机理与防御研究](http://gb.oversea.cnki.net/KCMS/detail/detail.aspx?filename=1018097481.nh&dbcode=CMFD&dbname=CMFDREF)
+- [ ] [程序逆向分析在软件供应链污染检测中的应用研究综述](http://www.cnki.com.cn/Article/CJFDTotal-JSJY202001018.htm)
+- [ ] [基于流量分析的软件升级漏洞自动检测方法](http://www.infocomm-journal.com/cjnis/CN/10.11959/j.issn.2096-109x.2020004)
 
-- [x] 软件供应链的定义: 
-  * 商品与服务: 软件
-  * 供应者: 软件供应商
-  * 消费者: 软件用户
-  * 资源: 软件设计开发各阶段编入软件的代码,模块和服务
-  * 加工: 编码过程, 工具和设备
-  * 渠道: 软件官网和第三方平台 
-- [x] 软件供应链安全的定义: 软件设计开发过程中本身的`编码过程/工具/设备`以及供应链上游的`代码/模块/服务的安全`, 以及`软件交付渠道安全`的总和. 
-- [x] 软件供应链安全发展历程:
-  1. 1984年, `K. Thompson`提出`KTH`攻击, 在难以发现的情况下修改编译器并设置后面, 污染所有通过此编译器编译并发布的软件. 
-  2. 2004年, 微软提出`SDL安全开发生命周期`流程, 将软件开发划分为多个阶段并在每个阶段引入相应安全措施, 保障软件开发安全并建立漏洞发现和处理框架机制. 
-  3. 2010年, `R.J. Ellison`和`C. Woody`提出`软件供应链风险管理`的概念, 介绍了相关分享的来源,总类,分享分析的方法, 威胁模型, 并讨论了应对风险的措施. 
-  4. 2015年`XcodeGhost`开发工具污染事件. 攻击者注入病毒污染了非官方渠道发布的Xcode, 使得编译出的app会将运行过程中收集到的敏感信息发送到攻击者服务器. 
-  5. 2017年6月`NotPetya`勒索病毒事件. 攻击者通过劫持软件的`升级更新渠道`, 使得用户更新软件时下载并感染了`NotPetya`勒索病毒.
-  6. 2017年`CCleaner`恶意代码植入事件. 攻击者入侵公司开发环境, 篡改了编码过程中使用的`CRT函数库`并置入后门代码. 同年7月`Xshell`也以类似手段植入恶意代码.
-  7. 2017年8月`WireX` Android僵尸网络事件. 攻击者将病毒与普通安卓app捆绑和伪装, 避过了Google Play对app的检测, 用户下载后感染为僵尸主机. 
-- [x] 供应安全的三个环节四个攻击:
-  * 三个环节: 开发环节, 交付环节, 使用环节. (还可以增加一个运营环节)
-  * 四个攻击: `开发环节的开发工具攻击`, `开发环节的源代码攻击`, `交付环节的分发渠道攻击`和`使用环节的升级补丁攻击`
-- [x] 软件供应安全研究技术:
-  1. 软件漏洞挖掘和分析手段
-    * 基于源代码: 使用静态分析方法对源代码进行脆弱性检测
-    * 基于模糊测试: 使用黑盒测试手段, 动态挖掘漏洞
-    * 基于代码特征: 根据已发现的漏洞提取漏洞特征然后检测目标是否含有该特征.
-    * 软件漏洞位置匹配: 确定软件存在漏洞后需要方法匹配识别定位漏洞. 
-    * 上游模块漏洞分析: `测量依赖关系/代码复用关系`, 结合`知识流网络/知识图谱`, 对软件模块进行分析. 
-  2. 恶意软件及模块的识别和清除手段
-    * 恶意特征提取: 基于`统计分析`以及`机器学习`方法对恶意代码静态分析. 
-    * 模块恶意篡改: `注入恶意代码`和`重打包/捆绑`是污染供应链的主要方式
-    * 比较篡改: 基于`图比较算法`分析相似二进制文件间的差异
-  3. 网络劫持的检测和防御手段: 劫持或篡改软件的`交付/维护`渠道: 目前软件的交付和使用阶段高度依赖于网络环节, 因此网络劫持是污染供应链的关键技术. 
-  4. 用户端软件安全机制
-</details>
+## 文章
+
+- [ ] [软件供应链来源攻击分析报告](https://www.freebuf.com/articles/paper/147403.html): 目前来看对各大供应链事件整合的最详细的一篇报告.
+- [ ] [Python Dependency Analysis](http://kgullikson88.github.io/blog/pypi-analysis.html)
+
+## PPT
+
+- [ ] [Knowledge Flows in Open Source Software Supply Chains](http://mockus.us/papers/nasac17.pdf)
