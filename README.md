@@ -23,7 +23,7 @@ Awesome系列repo, 收集与`软件供应链安全`相关的一切资料, 主要
 - [ ] [A Survey of Binary Code Similarity](https://arxiv.org/pdf/1909.11424.pdf)
 - [ ] [Malware Provenance: Detecting Code Reuse in Malicious Software](https://mountainscholar.org/bitstream/handle/10976/166579/Upchurch_uccs_0892D_10154.pdf?sequence=1)
 - [ ] [Rendezvous: A Search Engine for Binary Code](https://www.cl.cam.ac.uk/~rja14/Papers/rendezvous.pdf)
-- [ ] [Binary Code Extraction and Interface Identification for Security Applications](https://people.eecs.berkeley.edu/~dawnsong/papers/2010 binary code extraction.pdf)
+- [ ] [Binary Code Extraction and Interface Identification for Security Applications](https://people.eecs.berkeley.edu/~dawnsong/papers/2010%20binary%20code%20extraction.pdf)
 - [ ] [BinClone: Detecting Code Clones in Malware](https://cradpdf.drdc-rddc.gc.ca/PDFS/unc194/p800686_A1b.pdf)
 - [ ] [BinMatch: A Semantics-based Hybrid Approach on Binary Code Clone Analysis](https://arxiv.org/pdf/1808.06216.pdf)
 - [ ] [Asm2Vec: Boosting Static Representation Robustness for Binary Clone Search against Code Obfuscation and Compiler Optimization](http://dmas.lab.mcgill.ca/fung/pub/DFC19sp.pdf)
