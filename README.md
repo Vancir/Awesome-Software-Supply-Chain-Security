@@ -18,8 +18,8 @@ Awesome系列repo, 收集与`软件供应链安全`相关的一切资料, 主要
 - [ ] [BINARY CODE REUSE DETECTION FOR REVERSE ENGINEERING AND MALWARE ANALYSIS](https://pdfs.semanticscholar.org/910d/077c4f025e0866d79f8aa7e5c737f5db9894.pdf)
 - [ ] [BitShred: Fast, Scalable Code Reuse Detection in Binary Code](http://users.ece.cmu.edu/~jiyongj/papers/cmu-cylab-10-006.pdf)
 - [ ] [BINARY CODE REUSE: A DYNAMIC ANALYSIS BASED APPROACH](http://dl.icdst.org/pdfs/files/453e177f09099a3df22381e21b022c1a.pdf)
-- [ ] [BinSequence: Fast, Accurate and Scalable Binary Code Reuse Detection](https://users.encs.concordia.ca/~youssef/Publications/Papers/AsiaCCS2017.pdf)
-  - [ ] 他人对此论文的笔记: [https://www.zybuluo.com/SmashStack/note/726255](https://www.zybuluo.com/SmashStack/note/726255)
+- [x] [BinSequence: Fast, Accurate and Scalable Binary Code Reuse Detection](https://users.encs.concordia.ca/~youssef/Publications/Papers/AsiaCCS2017.pdf)
+  - [x] 他人对此论文的笔记: [https://www.zybuluo.com/SmashStack/note/726255](https://www.zybuluo.com/SmashStack/note/726255)
 - [ ] [A Survey of Binary Code Similarity](https://arxiv.org/pdf/1909.11424.pdf)
 - [ ] [Malware Provenance: Detecting Code Reuse in Malicious Software](https://mountainscholar.org/bitstream/handle/10976/166579/Upchurch_uccs_0892D_10154.pdf?sequence=1)
 - [ ] [Rendezvous: A Search Engine for Binary Code](https://www.cl.cam.ac.uk/~rja14/Papers/rendezvous.pdf)
@@ -27,6 +27,7 @@ Awesome系列repo, 收集与`软件供应链安全`相关的一切资料, 主要
 - [ ] [BinClone: Detecting Code Clones in Malware](https://cradpdf.drdc-rddc.gc.ca/PDFS/unc194/p800686_A1b.pdf)
 - [ ] [BinMatch: A Semantics-based Hybrid Approach on Binary Code Clone Analysis](https://arxiv.org/pdf/1808.06216.pdf)
 - [ ] [Asm2Vec: Boosting Static Representation Robustness for Binary Clone Search against Code Obfuscation and Compiler Optimization](http://dmas.lab.mcgill.ca/fung/pub/DFC19sp.pdf)
+- [x] [Semantic-Based Representation Binary Clone Detection for Cross-Architectures in the Internet of Things](https://www.mdpi.com/2076-3417/9/16/3283/pdf)
 
 ## 文章
 
